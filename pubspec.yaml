@@ -1,0 +1,108 @@
+name: catbreeds
+description: ""
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Used to user SVG format
+  flutter_svg: 2.0.10+1
+
+  # Used to import BLoC tools
+  equatable: 2.0.5
+  bloc: 8.1.4
+  flutter_bloc: 8.1.6
+  built_collection: 5.1.1
+
+  # Used to convert JSON in Objets
+  built_value: 8.9.2
+
+  # Used to user HttpClien
+  http: 1.2.2
+
+  #Used for navegate to Url
+  url_launcher: 6.3.0
+
+  #used for use variables of environment
+  flutter_dotenv: 5.1.0
+
+
+dev_dependencies:
+  
+  flutter_test:
+    sdk: flutter
+
+  integration_test:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter  
+
+  # Used to clean code
+  flutter_lints: 3.0.1
+
+  # Used to test BLoC
+  bloc_test: 9.1.7
+
+  # Used to mock objects
+  mockito: 5.4.4
+
+  # Used to generate objects
+  build_runner: 2.4.12
+  built_value_generator: 8.9.2
+
+  # Used to generate splash screen
+  flutter_native_splash: 2.4.1
+  
+  # Used to generate icon
+  flutter_launcher_icons: 0.13.1
+
+  # used for best practices
+  very_good_analysis: 4.0.0+1
+      
+flutter_native_splash:
+  color: "#F8EDCF"
+  image: assets/splash.png
+  android_gravity: fill
+  ios_content_mode: scaleToFill
+  fullscreen: true
+  android_12:
+    image_dark: assets/splash.png
+    icon_background_color: "#F8EDCF"
+  web: false
+
+flutter_icons:
+  image_path: 'assets/icon.jpg'
+  ios: true
+  android: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/
+    - assets/icons/
+    - assets/images/
+  
+  fonts:
+    - family: Karma
+      fonts:
+        - asset: assets/fonts/Karma/Karma-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Karma/Karma-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Karma/Karma-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Karma/Karma-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Karma/Karma-Bold.ttf
+          weight: 700
+  
